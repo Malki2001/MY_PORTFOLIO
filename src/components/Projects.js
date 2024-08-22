@@ -29,14 +29,12 @@ function Projects() {
             <Container>
                 <Row>
                     <Col>
-                        <TrackVisibility>
-                            {({ isVisible }) =>
-                                <div className={isVisible ? 'animate__animated animate__slideInUp' : ''}>
+                       
+                           
+                               
                                     <h2>Projects</h2>
-                                    <p>Each of these projects showcases my skills in creating visually appealing, user-friendly interfaces and developing responsive, functional web applications.</p>
-                                </div>
-                            }
-                        </TrackVisibility>
+                                    <p>Each of these projects showcases my skills in creating visually appealing, user-friendly interfaces and developing responsive, functional web and mobile applications.</p>
+                               
 
                         <Tab.Container id='projects-tab' defaultActiveKey="first">
                             <Nav variant="pills" defaultActiveKey="/first">

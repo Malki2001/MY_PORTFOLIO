@@ -20,8 +20,8 @@ function MyServices() {
            <div className="services-list">
              <div>
                 <BsCode size={50} fontWeight={500} color="rgba(227, 19, 242, 0.742)"  />
-                <h3>UI/UX Design</h3>
-                <p>Combine aesthetic design with functionality to deliver solutions that not only look great but also provide seamless interactions</p>
+                <h3>Frontend Development</h3>
+                <p>Craft responsive and dynamic web interfaces that not only captivate users visually but also ensure smooth, intuitive, and efficient interactions across all devices.</p>
              </div>
              <div>
                <BsCrop size={50} fontWeight={500} color="rgba(227, 19, 242, 0.742)"  />

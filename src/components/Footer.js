@@ -11,9 +11,9 @@ function Footer() {
     <footer className='footer'>
         <Container>
             <Row className='align-items-center'>
-                     {/* <Mailchimp/> */}
+                   
                      <Col sm={6}>
-                          {/* <img src={logo}/> */}
+                         
                           <h3 className='logo-name'>Portfolio</h3>
                       </Col>
                       <Col sm={6} className='text-center text-sm-end'>

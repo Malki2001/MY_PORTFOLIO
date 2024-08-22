@@ -53,7 +53,7 @@ function NavBar() {
                     <span className='navbar-text'>
                         <div className="social-icon">
                             <a href='https://www.linkedin.com/in/malki-yasodhara-b3194122b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'><img src={navIcon1} alt='LinkedIn' /></a>
-                            <a href='https://www.facebook.com/profile.php?id=100082780771570&mibextid=ZbWKwL'><img src={navIcon2} alt=' Facebook' /></a>
+                            <a href='https://github.com/Malki2001'><img src={navIcon2} alt=' Facebook' /></a>
                             <a href='https://www.instagram.com/malki_yasodhara?igsh=dmFzaWRsZjludXo0'><img src={navIcon3} alt='Instagram' /></a>
                         </div>
                         <button className='vvd' onClick={() => console.log('connect')}><span>Let's Connect</span></button>

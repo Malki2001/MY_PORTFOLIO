@@ -7,10 +7,15 @@ import TrackVisibility from 'react-on-screen';
 import { isVisible } from '@testing-library/user-event/dist/utils';
 
 
+import colorSharp from '../assets/img/color-sharp.png';
+import profile from '../assets/img/profile.jpg';
+
+
+
 function Banner() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ['FrontEnd Developer', 'Web Designer', 'UI/UX Designer'];
+  const toRotate = ['Software Engineer','FrontEnd Developer','Mobile App Developer', 'Web Designer', 'UI/UX Designer'];
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
@@ -49,11 +54,11 @@ function Banner() {
       <section className='banner' id='home'>
         <Container>
           <Row className='align-items-center'>
-            <Col xs={14} md={6} xl={7}>
+            <Col xs={10} md={6} xl={7}>
               <TrackVisibility>
                 {({ isVisible }) =>
                   <div className={isVisible ? 'animate__animated animate__fadeIn' : ''}>
-                    <span className='tagline'>Welcome to My Portfolio</span>
+                    {/* <span className='tagline'>Welcome to My Portfolio</span> */}
                     <h2>
                       {"Hi I'm Malki Yasodhara"} 
                     </h2>
@@ -61,17 +66,22 @@ function Banner() {
                        <span className='wrap'>{text}</span>
                     </h3>
                     <p>
-                      I'm, a passionate and detail-oriented Frontend Web Developer, Web Designer & a UI/UX Designer with a knack for creating seamless and engaging user experiences. With a strong foundation in HTML, CSS, JavaScript, and modern frameworks like React and also Flutter, I strive to build responsive, accessible, and visually appealing websites and mobile applications.
+                    Success is not the result of luck, but the outcome of consistent effort, unwavering focus, and the resolve to give your best, regardless of the outcome.
                     </p>
-                    <button onClick={() => console.log('connect')}>
+                    {/* <button onClick={() => console.log('connect')}>
                       Let's Connect <BsArrowRightCircle size={25} />
-                    </button>
+                    </button> */}
                   </div>
                 }
               </TrackVisibility>
             </Col>
             <Col xs={10} md={6} xl={5}>
-              <img src={headerImg} alt='' />
+              {/* <img src={headerImg} alt='' /> */}
+              <div className="about-img">
+                <img src={profile} alt="Profile" />
+                <span className='circle-spin'></span>
+              </div>
+
             </Col>
           </Row>
         </Container>

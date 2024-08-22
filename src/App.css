@@ -280,16 +280,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   display: block;
   color: rgba(227, 19, 242, 0.742);
 }
 .banner p {
   color: #B8B8B8;
-  font-size: 18px;
+  font-size: 22px;
   letter-spacing: 0.8px;
-  line-height: 1.5em;
+  line-height: 2em;
   width: 96%;
+  margin-top: 20px;
 }
 .banner button {
   color: #fff;
@@ -309,7 +310,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button:hover svg {
   margin-left: 25px;
 }
-.banner img {
+/* .banner img {
   animation: updown 3s linear infinite;
   
 }
@@ -323,7 +324,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     100% {
         transform: translateY(-20px);
     }
-}
+} */
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
@@ -332,13 +333,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .about-img{
   position: relative;
-  width: 15rem;
-  height: 15rem;
+  width: 25rem;
+  height: 25rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 38%;
+  margin-left: 20%;
 }
 
 .about-img img{
@@ -372,7 +373,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
-
+.skill-bx p{
+  margin-top: 10%;
+}
 .read-more {
   font-weight: 700;
   color: #fff;
@@ -475,12 +478,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     line-height: 1.5em;
     margin: 14px 0 75px 0;
 }
-.skill-slider {
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
-  margin-left: 15%;
-}
+
 .skill-slider .item img {
   width: 50%;
   margin: 0 auto 15px auto;
@@ -492,6 +490,76 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 40%;
   z-index: -4;
 }
+
+.skill-slider .item {
+  background-color: black;
+  color: white; 
+  padding: 20px; 
+  border-radius: 10px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 10px;
+
+}
+
+.skill-slider .react-multiple-carousel__arrow {
+  transition: all 0.3s ease;
+}
+
+.item {
+  background-color: black; 
+  padding: 20px; 
+  margin: 10px; 
+  border-radius: 10px; 
+  text-align: center; 
+  height: auto;
+
+}
+
+.item img {
+  width: 20px; 
+  height: 130px; 
+  margin-bottom: 10px; 
+  /* height: auto; */
+   
+}
+
+.item h5 {
+  color: white; 
+  /* margin: 0;  */
+}
+
+/* styles.css or your CSS file */
+.skill-slider .react-multi-carousel-item {
+  display: flex;
+  flex: 1 0 auto;
+  padding: 0 40px;
+}
+
+.skill-slider .react-multi-carousel-item img {
+  width: 100px; 
+  height: auto;
+}
+
+.skill-slider .carousel-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
 
 
 
