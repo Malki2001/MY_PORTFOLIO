@@ -56,7 +56,9 @@ function NavBar() {
                             <a href='https://github.com/Malki2001'><img src={navIcon2} alt=' Facebook' /></a>
                             <a href='https://www.instagram.com/malki_yasodhara?igsh=dmFzaWRsZjludXo0'><img src={navIcon3} alt='Instagram' /></a>
                         </div>
-                        <button className='vvd' onClick={() => console.log('connect')}><span>Let's Connect</span></button>
+                        <button className='vvd' onClick={() =>  document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }) }><span>Let's Connect</span></button>
+                       
+
                     </span>
                 </Navbar.Collapse>
             </Container>

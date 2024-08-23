@@ -17,8 +17,8 @@ function Banner() {
   const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = ['Software Engineer','FrontEnd Developer','Mobile App Developer', 'Web Designer', 'UI/UX Designer'];
   const [text, setText] = useState('');
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const period = 2000;
+  const [delta, setDelta] = useState(150 - Math.random() * 100);
+  const period = 3000;
 
   useEffect(() => {
     let ticker = setInterval(() => {

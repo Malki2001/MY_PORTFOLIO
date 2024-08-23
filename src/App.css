@@ -642,7 +642,30 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  height: 320px;
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-color: #151515; 
+  flex-direction: column;
+  text-align: center; 
+  
 }
+
+.proj-imgbx h2 {
+  margin-bottom: 30px; 
+  font-size: 24px; 
+  color: #fff;
+}
+.proj-imgbx img {
+  
+  max-width: 95%; 
+  max-height: 95%; 
+  object-fit: contain; 
+
+}
+
 .proj-imgbx::before {
   content: "";
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
@@ -670,16 +693,53 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 1;
 }
 .proj-txtx h4 {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
+  padding: 20px;
+  
 }
 .proj-txtx span {
+ 
   font-style: italic;
   font-weight: 400;
   font-size: 15px;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.5px;
+}
+
+.proj-txtx p {
+ 
+  
+  font-weight: bold;
+  font-size: 14px;
+  color: #000;
+  /* letter-spacing: 0.8px; */
+}
+
+.proj-imgbx .code-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 35px;
+  height: 35px;
+  background-color: #AA367C;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 15px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.proj-imgbx .code-icon:hover {
+  background-color: #4A2FBD;
+}
+
+.proj-imgbx .code-icon i {
+  margin: 0;
 }
 .background-image-right {
   top: 20%;
@@ -693,10 +753,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 3%;
 }
 
+
+/* Education CSS */
+
 /************ Projects Css ************/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  padding: 60px 0 200px 0;
+  padding: 40px 0 180px 0;
 }
 .contact img {
   width: 92%;
@@ -704,16 +767,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact h2 {
 	font-size: 45px;
 	font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 .contact form input, .contact form textarea {
   width: 100%;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 20px;
+  border-radius: 10px;
   color: #fff;
   margin: 0 0 8px 0;
-  padding: 18px 26px;
+  padding: 10px 26px;
   font-weight: 500;
   font-size: 18px;
   letter-spacing: 0.8px;
@@ -764,6 +827,40 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form button:hover::before {
   width: 100%;
 }
+
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  /* margin-top: 80px; */
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color:#AA367C;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  font-size: 24px;
+}
+
+.contact-item a,
+.contact-item span {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+
 
 /************ Footer Css ************/
 .footer {

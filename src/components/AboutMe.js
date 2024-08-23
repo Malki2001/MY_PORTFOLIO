@@ -13,7 +13,7 @@ function AboutMe() {
   };
 
   return (
-    <section className='skill' id='skills'>
+    <section className='skill' id='about'>
       <Container>
         <Row>
           <Col>

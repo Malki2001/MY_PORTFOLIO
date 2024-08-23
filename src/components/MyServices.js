@@ -10,7 +10,7 @@ import { BsApple } from 'react-icons/bs';
 
 function MyServices() {
   return (
-    <section className='skill' id='skills'>
+    <section className='skill' id='services'>
     <Container>
       <Row>
         <Col>
